@@ -12,8 +12,8 @@ public class QuitCommand extends AbstractCommand {
     // @Short Quits the program.
     // @Updated 2016/04/02
     // @Authors mcmonkey
-    // @Group Console/Common
-    // @Minium 0
+    // @Group Common
+    // @Minimum 0
     // @Maximum 0
     // @Description
     // Quits the program.
