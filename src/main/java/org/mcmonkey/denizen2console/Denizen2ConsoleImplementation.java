@@ -4,6 +4,8 @@ import org.mcmonkey.denizen2core.Denizen2Implementation;
 import org.mcmonkey.denizen2core.commands.CommandEntry;
 import org.mcmonkey.denizen2core.commands.CommandQueue;
 
+import java.io.File;
+
 public class Denizen2ConsoleImplementation extends Denizen2Implementation {
 
     @Override
@@ -24,5 +26,10 @@ public class Denizen2ConsoleImplementation extends Denizen2Implementation {
     @Override
     public void outputError(String message) {
         System.out.println("[Error] " + message);
+    }
+
+    @Override
+    public File getScriptsFolder() {
+        return new File("./scripts/");
     }
 }

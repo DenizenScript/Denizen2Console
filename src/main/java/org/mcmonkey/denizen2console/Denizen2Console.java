@@ -12,6 +12,7 @@ public class Denizen2Console {
     public static void main(String[] args) {
         Denizen2Core.init(new Denizen2ConsoleImplementation());
         Denizen2Core.register(new QuitCommand());
+        Denizen2Core.load();
         System.out.println("Denizen2: SimpleConsoleImplementation, running core: " + Denizen2Core.version);
         BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
         while (true) {
