@@ -51,6 +51,11 @@ public class QuitCommand extends AbstractCommand {
     }
 
     @Override
+    public boolean isWaitable() {
+        return false;
+    }
+
+    @Override
     public void execute(CommandQueue queue, CommandEntry entry) {
         System.exit(0);
     }
