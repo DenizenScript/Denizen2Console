@@ -14,6 +14,11 @@ public class Denizen2ConsoleImplementation extends Denizen2Implementation {
     }
 
     @Override
+    public void outputGood(String text) {
+        System.out.println("[Good] " + text);
+    }
+
+    @Override
     public void outputInfo(String text) {
         System.out.println("[Info] " + text);
     }
