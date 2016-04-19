@@ -36,11 +36,6 @@ public class QuitCommand extends AbstractCommand {
     }
 
     @Override
-    public String getDescription() {
-        return "Quits the program.";
-    }
-
-    @Override
     public int getMinimumArguments() {
         return 0;
     }

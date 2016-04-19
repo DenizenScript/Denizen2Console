@@ -24,8 +24,8 @@ public class Denizen2ConsoleImplementation extends Denizen2Implementation {
     }
 
     @Override
-    public void outputInvalid(CommandQueue commandQueue, CommandEntry commandEntry) {
-        System.out.println("[Error] Invalid/unknown command: " +commandEntry.originalLine + "... -> " + commandEntry.arguments);
+    public void outputInvalid(CommandQueue queue, CommandEntry entry) {
+        queue.handleError(entry, "Invalid/unknown command: " + entry.originalLine + "... -> " + entry.arguments);
     }
 
     @Override
