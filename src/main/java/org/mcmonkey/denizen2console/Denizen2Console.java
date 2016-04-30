@@ -9,16 +9,22 @@ import java.io.InputStreamReader;
 
 public class Denizen2Console {
 
+    public static final Object syncer = new Object();
+
     public static void main(String[] args) {
         Denizen2Core.init(new Denizen2ConsoleImplementation());
         Denizen2Core.register(new QuitCommand());
         Denizen2Core.load();
         System.out.println("Denizen2: SimpleConsoleImplementation, running core: " + Denizen2Core.version);
+        QueueThread qt = new QueueThread();
+        qt.start();
         BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
         while (true) {
             try {
                 String str = buffer.readLine();
-                Denizen2Core.runString(str);
+                synchronized (Denizen2Console.syncer) {
+                    Denizen2Core.runString(str);
+                }
             }
             catch (Exception ex) {
                 Debug.exception(ex);
