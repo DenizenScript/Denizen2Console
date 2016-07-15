@@ -21,8 +21,6 @@ public class QuitCommand extends AbstractCommand {
     // @Example
     // # This example quits the program.
     // - quit
-    // @Tags
-    // None.
     // -->
 
     @Override

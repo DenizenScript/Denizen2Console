@@ -37,4 +37,14 @@ public class Denizen2ConsoleImplementation extends Denizen2Implementation {
     public File getScriptsFolder() {
         return new File("./scripts/");
     }
+
+    @Override
+    public String getImplementationName() {
+        return "Denizen2Console";
+    }
+
+    @Override
+    public String getImplementationVersion() {
+        return Denizen2Console.version;
+    }
 }

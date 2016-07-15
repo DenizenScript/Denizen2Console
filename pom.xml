@@ -7,7 +7,7 @@
     <groupId>org.mcmonkey</groupId>
     <artifactId>denizen2console</artifactId>
     <packaging>jar</packaging>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>Denizen2Console</name>
     <description>A simple console implementation of Denizen2.</description>
 
@@ -16,11 +16,19 @@
         <BUILD_NUMBER>Unknown</BUILD_NUMBER>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>Frenetic-Repo</id>
+            <name>Frenetic-Repo</name>
+            <url>http://jci.mcmonkey.org/plugin/repository/everything/</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>org.mcmonkey</groupId>
             <artifactId>denizen2core</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>0.0.2-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
