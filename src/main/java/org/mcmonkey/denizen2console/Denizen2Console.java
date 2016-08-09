@@ -17,7 +17,7 @@ public class Denizen2Console {
     static {
         YAMLConfiguration config = null;
         try {
-            InputStream is = Denizen2Core.class.getResourceAsStream("/denizen2console.yml");
+            InputStream is = Denizen2Console.class.getResourceAsStream("/denizen2console.yml");
             config = YAMLConfiguration.load(CoreUtilities.streamToString(is));
             is.close();
         }

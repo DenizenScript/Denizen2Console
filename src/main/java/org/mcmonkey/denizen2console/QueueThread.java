@@ -6,6 +6,7 @@ public class QueueThread extends Thread {
 
     @Override
     public void run() {
+        // TODO: Accurate timing!
         while (true) {
             synchronized (Denizen2Console.syncer) {
                 Denizen2Core.tick(0.05);
