@@ -7,7 +7,7 @@
     <groupId>org.mcmonkey</groupId>
     <artifactId>denizen2console</artifactId>
     <packaging>jar</packaging>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.1-SNAPSHOT</version>
     <name>Denizen2Console</name>
     <description>A simple console implementation of Denizen2.</description>
 
@@ -28,7 +28,7 @@
         <dependency>
             <groupId>org.mcmonkey</groupId>
             <artifactId>denizen2core</artifactId>
-            <version>0.0.2-SNAPSHOT</version>
+            <version>0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

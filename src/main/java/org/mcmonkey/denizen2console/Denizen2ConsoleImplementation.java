@@ -9,6 +9,11 @@ import java.io.File;
 public class Denizen2ConsoleImplementation extends Denizen2Implementation {
 
     @Override
+    public boolean generalDebug() {
+        return true;
+    }
+
+    @Override
     public void outputException(Exception ex) {
         ex.printStackTrace();
     }
